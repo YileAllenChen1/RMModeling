@@ -1,0 +1,27 @@
+<annotation>
+    <filename>LingzhiTechAresVsThunder_BO2_2_0.jpg</filename>
+    <version>v3.0</version>
+    <review_status>passed</review_status>
+    <time_elapsed>92</time_elapsed>
+    <img_label/>
+    <size>
+        <width>1920</width>
+        <height>1080</height>
+    </size>
+    <padding_pxt>
+        <padding_x>76</padding_x>
+        <padding_y>43</padding_y>
+    </padding_pxt>
+    <object>
+        <name>watcher</name>
+        <difficulty>1</difficulty>
+        <generated>0</generated>
+        <is_incorrect>0</is_incorrect>
+        <bndbox>
+            <xmin>-5.02609</xmin>
+            <ymin>793.478</ymin>
+            <xmax>74.8196</xmax>
+            <ymax>883.463</ymax>
+        </bndbox>
+    </object>
+</annotation>
