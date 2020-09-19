@@ -1,0 +1,24 @@
+item {
+    id: 0
+    name:'car'
+}
+
+item {
+    id: 1
+    name: 'watcher'
+}
+
+item {
+    id: 2
+    name: 'base'
+}
+
+item {
+    id: 3
+    name: 'armor'
+}
+
+item {
+    id: 4
+    name: 'ignore'
+}

@@ -29,14 +29,16 @@ FLAGS = flags.FLAGS
 
 # TO-DO replace this with label map
 def class_text_to_int(row_label):
-    if row_label == 'totoro':
-    # if row_label == 'tommad':
+    if row_label == 'car':
+        return 0
+    elif row_label == 'watcher':
         return 1
-    elif row_label == 'nekobus':
-    # elif row_label == 'kk':
+    elif row_label == 'base':
         return 2
-    else:
-        None
+    elif row_label == 'armor':
+        return 3
+    elif row_label == 'ignore':
+        return 4
 
 
 def split(df, group):
