@@ -1,20 +1,5 @@
   
 import os
-# import re
-
-# def sorted_aphanumeric(data):
-#     convert = lambda text: int(text) if text.isdigit() else text.lower()
-#     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
-#     return sorted(data, key=alphanum_key)
-	
-# path = r"C:\Users\11458\Desktop\RMModeling"
-
-
-# i = 0
-# j = 0
-# for filename in sorted_aphanumeric(os.listdir(path)):
-# 	os.rename(os.path.join(path,filename), os.path.join(path,"Image_" + str(i) + ".xml"))
-# 	i+=1
 	
 def main(): 
 	#os.chdir(r"C:\Users\11458\Desktop\RMModeling\image_annotation") 
