@@ -1,9 +1,24 @@
 item {
+    id: 0
+    name:'car'
+}
+
+item {
     id: 1
-    name:'totoro'
+    name: 'watcher'
 }
 
 item {
     id: 2
-    name: 'nekobus'
+    name: 'base'
+}
+
+item {
+    id: 3
+    name: 'armor'
+}
+
+item {
+    id: 4
+    name: 'ignore'
 }
