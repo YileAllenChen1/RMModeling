@@ -1,9 +1,9 @@
 import os
 
 def main(): 
-	os.chdir(r"C:/Users/11458/Desktop/RMModeling/renamed_data")
+	os.chdir(r"C:/Users/11458/Desktop/RMModeling/images/raw_images_jpg")
 	#print(os.getcwd()) 
-	path = r"C:/Users/11458/Desktop/RMModeling/renamed_data/"
+	path = r"C:/Users/11458/Desktop/RMModeling/images/raw_images_jpg/"
 
 	rename = ""
 	for count, filename in enumerate(os.listdir(path)):

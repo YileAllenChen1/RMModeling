@@ -3,22 +3,45 @@ import os
 import random
 
 
-source = r"C:/Users/11458/Desktop/RMModeling/images/renamed_images"
+xml_source = r"C:/Users/11458/Desktop/RMModeling/images/renamed_images_xml"
+jpg_source = r"C:/Users/11458/Desktop/RMModeling/images/renamed_images_jpg"
 destination_train = r"C:/Users/11458/Desktop/RMModeling/images/train"
 destination_test = r"C:/Users/11458/Desktop/RMModeling/images/test"
 
-files = os.listdir(source)	#get all the files in directory, stored in list
+xml_files = os.listdir(xml_source)	#get all the files in directory, stored in list
+jpg_files = os.listdir(jpg_source)
 
 test_train_ratio = 0.2	#ratio of test samples from total
-test_images = random.sample(files, int(len(files)*test_train_ratio))
-train_images = list(set(files) - set(test_images))
+test_images_xml = random.sample(xml_files, int(len(xml_files)*test_train_ratio))
+train_images_xml = list(set(xml_files) - set(test_images_xml))
 
-for count, test_image in enumerate(test_images):
-	if test_images not in os.listdir(destination_test):
-		new_test_path = shutil.copy(f"{source}/{test_image}", destination_test)
+test_images_jpg = []
+train_images_jpg = []
+
+for count, jpg_image in enumerate(jpg_files):
+	# print(jpg_image[:-4])
+	for xml_image in test_images_xml:
+		if jpg_image[:-4] == xml_image[:-4]:
+			test_images_jpg.append(jpg_image)
+	for xml_image in train_images_xml:
+		if jpg_image[:-4] == xml_image[:-4]:
+			train_images_jpg.append(jpg_image)
 	print(count)
 
-for count, train_image in enumerate(train_images):
-	if train_images not in os.listdir(destination_train):
-		new_train_path = shutil.copy(f"{source}/{train_image}", destination_train)
+
+
+for count, test_image_xml in enumerate(test_images_xml):
+	new_test_path = shutil.copy(f"{xml_source}/{test_image_xml}", destination_test)
+	print(count)
+
+for count, train_image_xml in enumerate(train_images_xml):
+	new_train_path = shutil.copy(f"{xml_source}/{train_image_xml}", destination_train)
+	print(count)
+
+for count, test_image_jpg in enumerate(test_images_jpg):
+	new_test_path = shutil.copy(f"{jpg_source}/{test_image_jpg}", destination_test)
+	print(count)
+
+for count, train_image_jpg in enumerate(train_images_jpg):
+	new_train_path = shutil.copy(f"{jpg_source}/{train_image_jpg}", destination_train)
 	print(count)
