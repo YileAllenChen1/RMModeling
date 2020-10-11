@@ -13,19 +13,19 @@ def main():
 
 		if "狼牙" in filename:
 			index = filename.find('_')
-			rename = "VW_CH3GjhyVsWolfTooth" + filename[index:]
+			rename = "VW_CH3GjhyVsWolfTooth" + filename[index+5:]
 		if "交龙" in filename:
 			index = filename.find('_')
-			rename = "VW_CH3RoboGrinderVsJiaoDrangon" + filename[index:]
+			rename = "VW_CH3RoboGrinderVsJiaoDrangon" + filename[index+5:]
 		if "火线" in filename:
 			index = filename.find('_')
-			rename = "VW_CH3FireWireVsHorizon" + filename[index:]
+			rename = "VW_CH3FireWireVsHorizon" + filename[index+5:]
 		if "中维动力" in filename: 
 			index = filename.find('_')
-			rename = "VW_CH3ZwdlVsAlliance" + filename[index:]
+			rename = "VW_CH3ZwdlVsAlliance" + filename[index+5:]
 		if "风暴" in filename:
 			index = filename.find('_')
-			rename = "VW_CH3StormVsHuanan_tiger" + filename[index:]
+			rename = "VW_CH3StormVsHuanan_tiger" + filename[index+5:]
 		# if "领志科技" in filename:
 		# 	index = filename.find('_')
 		# 	rename = "LingzhiTechAresVsThunder" + filename[index:]
